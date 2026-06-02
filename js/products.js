@@ -97,6 +97,7 @@ function createFeaturedCard(product) {
   return `
     <a href="${getProductDetailUrl(product)}" class="preview-card" aria-label="${escapeHtml(product.name)} 상세 보기">
       <div class="preview-image" style="background-image: url('${product.image}');"></div>
+      <span class="preview-hover-orb" style="background-image: url('${product.image}');" aria-hidden="true"></span>
       <h3>${escapeHtml(product.name)}</h3>
       <p>${escapeHtml(product.price)}</p>
     </a>
@@ -140,6 +141,29 @@ function updateFeaturedSlider() {
   featuredTrackElement.style.transform = `translateX(-${featuredIndex * firstCard.offsetWidth}px)`;
 }
 
+function bindFeaturedHoverOrbs() {
+  if (!featuredTrackElement) {
+    return;
+  }
+
+  featuredTrackElement.querySelectorAll(".preview-card").forEach((card) => {
+    const orb = card.querySelector(".preview-hover-orb");
+
+    if (!orb) {
+      return;
+    }
+
+    card.addEventListener("pointermove", (event) => {
+      const cardRect = card.getBoundingClientRect();
+      const x = event.clientX - cardRect.left;
+      const y = event.clientY - cardRect.top;
+
+      orb.style.setProperty("--orb-x", `${x}px`);
+      orb.style.setProperty("--orb-y", `${y}px`);
+    });
+  });
+}
+
 function renderFeaturedProducts() {
   if (!featuredTrackElement) {
     return;
@@ -149,6 +173,7 @@ function renderFeaturedProducts() {
 
   featuredTrackElement.innerHTML = featuredProducts.map(createFeaturedCard).join("");
   featuredIndex = 0;
+  bindFeaturedHoverOrbs();
   updateFeaturedSlider();
 }
 
