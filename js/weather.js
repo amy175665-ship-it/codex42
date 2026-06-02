@@ -37,7 +37,10 @@ async function loadWeather() {
   if (!WEATHER_API_KEY) {
     weatherElement.innerHTML = `
       <strong>날씨</strong>
-      <span>날씨 API 키를 연결하면 현재 날씨가 표시됩니다.</span>
+      <div class="weather-detail">
+        <span>날씨 API 키를 연결하면 현재 날씨가 표시됩니다.</span>
+        <span class="weather-icon-fallback" aria-hidden="true">&#9729;</span>
+      </div>
     `;
     return;
   }
@@ -52,16 +55,24 @@ async function loadWeather() {
 
     const data = await response.json();
     const temperature = Math.round(data.main.temp);
-    const description = data.weather[0].description;
+    const currentWeather = data.weather[0];
+    const description = currentWeather.description;
+    const iconUrl = `https://openweathermap.org/img/wn/${currentWeather.icon}@2x.png`;
 
     weatherElement.innerHTML = `
       <strong>${WEATHER_CITY_LABEL}</strong>
-      <span>${temperature}°C / ${description}</span>
+      <div class="weather-detail">
+        <span>${temperature}°C / ${description}</span>
+        <img class="weather-icon" src="${iconUrl}" alt="${description}">
+      </div>
     `;
   } catch (error) {
     weatherElement.innerHTML = `
       <strong>날씨</strong>
-      <span>날씨 정보를 불러오지 못했습니다.</span>
+      <div class="weather-detail">
+        <span>날씨 정보를 불러오지 못했습니다.</span>
+        <span class="weather-icon-fallback" aria-hidden="true">&#9729;</span>
+      </div>
     `;
   }
 }
