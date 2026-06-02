@@ -1,12 +1,14 @@
 const productListElement = document.getElementById("product-list");
 const featuredTrackElement = document.getElementById("featured-track");
 const filterButtons = document.querySelectorAll("[data-filter]");
+const productTitleElement = document.querySelector("#shop h2");
 const previousButton = document.querySelector(".slider-button-prev");
 const nextButton = document.querySelector(".slider-button-next");
 
 let products = [];
 let featuredIndex = 0;
 let selectedFilter = "all";
+const filterTitleMap = new Map();
 
 function escapeHtml(value) {
   return String(value)
@@ -68,6 +70,14 @@ function getInitialFilter() {
 function updateFilterUrl(filter) {
   const nextUrl = filter === "all" ? "#shop" : `?filter=${encodeURIComponent(filter)}#shop`;
   window.history.replaceState(null, "", nextUrl);
+}
+
+function getFilterTitle(filter) {
+  if (filter === "all") {
+    return "전체 상품";
+  }
+
+  return filterTitleMap.get(filter) || "전체 상품";
 }
 
 function createBadgeMarkup(product) {
@@ -211,10 +221,19 @@ function setActiveFilter(filter) {
   });
 }
 
-function applyFilter(filter, shouldUpdateUrl = true) {
+function updateProductTitle(filter, title) {
+  if (!productTitleElement) {
+    return;
+  }
+
+  productTitleElement.textContent = filter === "all" ? getFilterTitle(filter) : title || getFilterTitle(filter);
+}
+
+function applyFilter(filter, shouldUpdateUrl = true, title) {
   selectedFilter = filter || "all";
 
   setActiveFilter(selectedFilter);
+  updateProductTitle(selectedFilter, title);
   renderProducts(selectedFilter);
 
   if (shouldUpdateUrl && window.location.hash === "#shop") {
@@ -223,8 +242,10 @@ function applyFilter(filter, shouldUpdateUrl = true) {
 }
 
 filterButtons.forEach((button) => {
+  filterTitleMap.set(button.dataset.filter, button.textContent.trim());
+
   button.addEventListener("click", () => {
-    applyFilter(button.dataset.filter);
+    applyFilter(button.dataset.filter, true, button.textContent.trim());
   });
 });
 
