@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLANCE | 안경 & 선글라스 쇼룸</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">GLANCE</a>
+
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="#shop" class="nav-link" data-filter="new">신상품 & 베스트</a>
+            <ul class="dropdown-menu" aria-label="신상품과 베스트 메뉴">
+              <li><a href="#shop" data-filter="new">신상품</a></li>
+              <li><a href="#shop" data-filter="best">베스트셀러</a></li>
+              <li><a href="#shop" data-filter="restock">재입고</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#shop" class="nav-link" data-filter="optical">안경</a>
+            <ul class="dropdown-menu" aria-label="안경 메뉴">
+              <li><a href="#shop" data-filter="optical">전체 안경</a></li>
+              <li><a href="#shop" data-filter="metal">메탈 프레임</a></li>
+              <li><a href="#shop" data-filter="horn">뿔테 프레임</a></li>
+              <li><a href="#shop" data-filter="titanium">티타늄</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#shop" class="nav-link" data-filter="sunglasses">선글라스</a>
+            <ul class="dropdown-menu" aria-label="선글라스 메뉴">
+              <li><a href="#shop" data-filter="sunglasses">전체 선글라스</a></li>
+              <li><a href="#shop" data-filter="classic">클래식</a></li>
+              <li><a href="#shop" data-filter="sports">스포츠</a></li>
+              <li><a href="#shop" data-filter="tint">틴트 렌즈</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#features" class="nav-link">기획전</a>
+            <ul class="dropdown-menu" aria-label="기획전 메뉴">
+              <li><a href="#features">작업 컬렉션</a></li>
+              <li><a href="#features">시즌 룩북</a></li>
+              <li><a href="#features">매장 이벤트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page-section active">
+      <div class="home-stack">
+        <div class="hero-stage">
+          <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1530432999454-016a47c78af3?auto=format&fit=crop&w=1600&q=80">
+            <source src="https://videos.pexels.com/video-files/5321135/5321135-hd_1920_1080_25fps.mp4" type="video/mp4">
+          </video>
+          <div class="hero-overlay"></div>
+
+          <div class="container hero-layout">
+            <div class="hero-copy">
+              <p class="section-kicker">Eyewear & Sunglasses</p>
+              <h1>Clean Vision, Sharp Style</h1>
+              <p class="hero-text">
+                정제된 실루엣과 선명한 무드로 완성한 GLANCE의 안경과 선글라스 컬렉션을 만나보세요.
+              </p>
+              <a href="#shop" class="primary-button hero-button">컬렉션 자세히 보기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container featured-preview">
+          <div class="section-heading-row">
+            <div>
+              <p class="section-kicker">추천 상품</p>
+              <h2>TOP 20 베스트셀러</h2>
+            </div>
+            <div class="featured-actions">
+              <div class="slider-controls" aria-label="추천 상품 이동">
+                <button type="button" class="slider-button slider-button-prev" aria-label="이전 상품">&lt;</button>
+                <button type="button" class="slider-button slider-button-next" aria-label="다음 상품">&gt;</button>
+              </div>
+              <a href="#shop" class="featured-link">전체 상품 보기</a>
+            </div>
+          </div>
+
+          <div class="featured-slider" aria-label="추천 상품 슬라이더">
+            <div class="preview-viewport">
+              <div id="featured-track" class="preview-track"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <aside class="home-widget weather-strip" aria-label="오늘의 날씨와 시간">
+            <div>
+              <p class="section-kicker">오늘의 정보</p>
+              <h2>날씨와 시간</h2>
+            </div>
+            <div class="weather-info-grid">
+              <div id="clock" class="info-box"></div>
+              <div id="weather-info" class="info-box"></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="store-location">
+          <div class="container store-layout">
+            <div>
+              <p class="section-kicker">오프라인 매장</p>
+              <h2>매장 안내</h2>
+              <p class="section-description">카카오맵으로 GLANCE 오프라인 매장 위치를 확인해보세요.</p>
+            </div>
+            <div id="map" class="map-area"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="page-section">
+      <div class="container">
+        <p class="section-kicker">상품</p>
+        <h2>전체 상품</h2>
+        <p class="section-description">GLANCE가 선보이는 안경과 선글라스 컬렉션입니다.</p>
+        <div class="product-toolbar" aria-label="상품 필터">
+          <button type="button" class="filter-button active" data-filter="all">전체</button>
+          <button type="button" class="filter-button" data-filter="optical">안경</button>
+          <button type="button" class="filter-button" data-filter="sunglasses">선글라스</button>
+          <button type="button" class="filter-button" data-filter="new">신상품</button>
+          <button type="button" class="filter-button" data-filter="best">베스트</button>
+        </div>
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="features" class="page-section">
+      <div class="container">
+        <div class="features-hero">
+          <div>
+            <p class="section-kicker">기획전</p>
+            <h2>에디션 스토리</h2>
+            <p class="section-description">
+              GLANCE가 제안하는 작업 컬렉션, 시즌 룩북, 오프라인 매장 이벤트를 한눈에 확인하세요.
+            </p>
+          </div>
+          <a href="#shop" class="primary-button">상품 보러가기</a>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large">
+            <div class="feature-image" style="background-image: url('https://images.unsplash.com/photo-1760446032123-f66e0c7a005b?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="feature-content">
+              <p class="feature-label">작업 컬렉션</p>
+              <h3>스튜디오 모노톤 작업</h3>
+              <p>블랙 프레임과 투명 렌즈의 대비를 중심으로 완성한 시그니처 컬렉션입니다.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-image" style="background-image: url('https://images.unsplash.com/photo-1654257650833-b7398115275a?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="feature-content">
+              <p class="feature-label">시즌 룩북</p>
+              <h3>블랙 서머 에디션</h3>
+              <p>선글라스 하나로 완성하는 여름 시즌 미니멀 스타일을 제안합니다.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-image" style="background-image: url('https://images.unsplash.com/photo-1761896889181-480c1f9cbf58?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="feature-content">
+              <p class="feature-label">매장 이벤트</p>
+              <h3>오프라인 피팅 위크</h3>
+              <p>매장에서 직접 착용하고 얼굴형에 맞는 프레임을 추천받는 피팅 이벤트입니다.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="feature-banner">
+          <p>회원 전용</p>
+          <strong>신상품 선공개와 매장 이벤트 알림을 가장 먼저 받아보세요.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page-section">
+      <div class="container">
+        <p class="section-kicker">브랜드 소개</p>
+        <h2>GLANCE 이야기</h2>
+        <p class="section-description">절제된 디자인과 편안한 착용감을 기준으로 안경과 선글라스를 제안합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 GLANCE. 모든 권리 보유</p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/map.js"></script>
+</body>
+</html>

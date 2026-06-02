@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "모던 라운드 안경",
+    "category": "optical",
+    "tags": ["new", "best", "horn"],
+    "price": "189,000원",
+    "image": "https://images.unsplash.com/photo-1760446031441-65f456460d59?auto=format&fit=crop&w=1200&q=80",
+    "description": "부드러운 라운드 셰입과 모노톤 무드가 어우러진 데일리 프레임."
+  },
+  {
+    "id": 2,
+    "name": "아카이브 라운드 프레임",
+    "category": "optical",
+    "tags": ["best", "classic"],
+    "price": "169,000원",
+    "image": "https://images.unsplash.com/photo-1760446032123-f66e0c7a005b?auto=format&fit=crop&w=1200&q=80",
+    "description": "차분한 인상을 완성하는 클래식 블랙 라운드 프레임."
+  },
+  {
+    "id": 3,
+    "name": "스튜디오 블랙 안경",
+    "category": "optical",
+    "tags": ["new", "metal"],
+    "price": "178,000원",
+    "image": "https://images.unsplash.com/photo-1766998224439-9f048ed4d687?auto=format&fit=crop&w=1200&q=80",
+    "description": "군더더기 없는 직선 실루엣과 미니멀한 마감이 돋보입니다."
+  },
+  {
+    "id": 4,
+    "name": "빈티지 카메오 프레임",
+    "category": "optical",
+    "tags": ["best", "titanium"],
+    "price": "209,000원",
+    "image": "https://images.unsplash.com/photo-1761896889181-480c1f9cbf58?auto=format&fit=crop&w=1200&q=80",
+    "description": "빈티지 아카이브에서 영감을 받은 선명한 금속 프레임."
+  },
+  {
+    "id": 5,
+    "name": "블랙 미러 선글라스",
+    "category": "sunglasses",
+    "tags": ["new", "best", "classic"],
+    "price": "219,000원",
+    "image": "https://images.unsplash.com/photo-1654257650833-b7398115275a?auto=format&fit=crop&w=1200&q=80",
+    "description": "짙은 블랙 프레임과 반사 렌즈가 강한 인상을 만듭니다."
+  },
+  {
+    "id": 6,
+    "name": "바이커 보더 프레임",
+    "category": "sunglasses",
+    "tags": ["best", "sports"],
+    "price": "198,000원",
+    "image": "https://img.netpx.co.kr/images/goods_img/20250203/145946/145946_d_500.jpg",
+    "description": "활동적인 스트리트 룩에 잘 어울리는 볼드한 선글라스."
+  },
+  {
+    "id": 7,
+    "name": "페이퍼 라운드 선글라스",
+    "category": "sunglasses",
+    "tags": ["new", "classic"],
+    "price": "188,000원",
+    "image": "https://images.unsplash.com/photo-1530432999454-016a47c78af3?auto=format&fit=crop&w=1200&q=80",
+    "description": "가벼운 블랙 라인으로 완성한 클래식 라운드 타입."
+  },
+  {
+    "id": 8,
+    "name": "오션 틴트 선글라스",
+    "category": "sunglasses",
+    "tags": ["new", "tint"],
+    "price": "179,000원",
+    "image": "https://images.unsplash.com/photo-1562344319-b224e64a4456?auto=format&fit=crop&w=1200&q=80",
+    "description": "은은한 틴트 렌즈로 차분한 분위기를 더하는 선글라스."
+  },
+  {
+    "id": 9,
+    "name": "실버 라인 메탈",
+    "category": "optical",
+    "tags": ["new", "metal"],
+    "price": "162,000원",
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=80",
+    "description": "얇은 실버 라인이 얼굴선을 차분하게 정리해주는 메탈 프레임."
+  },
+  {
+    "id": 10,
+    "name": "오리진 뿔테 프레임",
+    "category": "optical",
+    "tags": ["best", "horn"],
+    "price": "184,000원",
+    "image": "https://img.lookoptical.co.kr/olnimage/BLACK%20CAVALIERE/BCS_Thumbnail/BC7015%20BLACK%2049-6.jpg",
+    "description": "클래식한 스타일링에 힘을 더하는 굵직한 뿔테 프레임."
+  },
+  {
+    "id": 11,
+    "name": "더블 티타늄",
+    "category": "optical",
+    "tags": ["restock", "titanium"],
+    "price": "228,000원",
+    "image": "https://cdn.imweb.me/thumbnail/20231205/094780fd839f8.jpg",
+    "description": "가볍고 정교한 착용감을 위해 설계한 티타늄 안경."
+  },
+  {
+    "id": 12,
+    "name": "어반 스포츠 아이웨어",
+    "category": "sunglasses",
+    "tags": ["new", "sports"],
+    "price": "206,000원",
+    "image": "https://kr.stussy.com/cdn/shop/files/338444_HDGL_1.jpg?v",
+    "description": "활동적인 일상에 맞춘 스포티한 선글라스."
+  },
+  {
+    "id": 13,
+    "name": "앰버 틴트 클래식",
+    "category": "sunglasses",
+    "tags": ["best", "tint", "classic"],
+    "price": "193,000원",
+    "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=1200&q=80",
+    "description": "따뜻한 앰버 렌즈와 빈티지 라인이 조화로운 선글라스."
+  },
+  {
+    "id": 14,
+    "name": "블랙 스퀘어",
+    "category": "sunglasses",
+    "tags": ["restock", "best"],
+    "price": "214,000원",
+    "image": "https://cdn.daisomall.co.kr/file/resize/PD/20251223/thumbnail/850/ZEDgK31n28oUdxKMXSMj1061519_00_00ZEDgK31n28oUdxKMXSMj.jpg",
+    "description": "강한 실루엣으로 다시 입고된 블랙 스퀘어 선글라스."
+  },
+  {
+    "id": 15,
+    "name": "미니멀 와이어 안경",
+    "category": "optical",
+    "tags": ["new", "metal"],
+    "price": "156,000원",
+    "image": "https://m.stylehorn.co.kr/web/product/extra/202404/a2c917e8c0268578776803196bed5fad.jpg",
+    "description": "얇은 와이어 라인으로 가볍고 단정한 인상을 주는 안경."
+  },
+  {
+    "id": 16,
+    "name": "매트 블랙 뿔테",
+    "category": "optical",
+    "tags": ["best", "horn"],
+    "price": "176,000원",
+    "image": "https://ecimg.cafe24img.com/pg732b09177535036/slst1028/web/product/medium/20260515/f748bf1924fe52e5a84b9320ae0d0acd.jpg",
+    "description": "무광 블랙 질감과 또렷한 실루엣이 돋보이는 뿔테 프레임."
+  },
+  {
+    "id": 17,
+    "name": "클리어 라이트 프레임",
+    "category": "optical",
+    "tags": ["new", "classic"],
+    "price": "148,000원",
+    "image": "https://image2.lotteimall.com/goods/42/40/56/2473564042_1.jpg/dims/resizemc/550x550/optimize",
+    "description": "투명한 프레임으로 얼굴에 자연스럽게 어울리는 데일리 안경."
+  },
+  {
+    "id": 18,
+    "name": "리파인 티타늄 라운드",
+    "category": "optical",
+    "tags": ["restock", "titanium"],
+    "price": "236,000원",
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=80",
+    "description": "섬세한 티타늄 라인과 라운드 형태가 부드러운 분위기를 만듭니다."
+  },
+  {
+    "id": 19,
+    "name": "스모크 렌즈 선글라스",
+    "category": "sunglasses",
+    "tags": ["new", "tint"],
+    "price": "187,000원",
+    "image": "https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=1200&q=80",
+    "description": "은은한 스모크 렌즈로 차분한 무드를 완성하는 선글라스."
+  },
+  {
+    "id": 20,
+    "name": "액티브 커브 아이웨어",
+    "category": "sunglasses",
+    "tags": ["best", "sports"],
+    "price": "221,000원",
+    "image": "https://webimage.10x10.co.kr/image/basic1000/623/B006231697.jpg",
+    "description": "곡선형 렌즈와 안정적인 착용감으로 활동적인 날에 어울립니다."
+  },
+  {
+    "id": 21,
+    "name": "모노 클래식 선글라스",
+    "category": "sunglasses",
+    "tags": ["classic", "restock"],
+    "price": "199,000원",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=80",
+    "description": "군더더기 없는 클래식 실루엣으로 오래 착용하기 좋은 모델."
+  },
+  {
+    "id": 22,
+    "name": "하이 콘트라스트 블랙",
+    "category": "sunglasses",
+    "tags": ["new", "best"],
+    "price": "229,000원",
+    "image": "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1200&q=80",
+    "description": "강한 블랙 프레임과 선명한 렌즈 대비가 인상적인 선글라스."
+  }
+]
